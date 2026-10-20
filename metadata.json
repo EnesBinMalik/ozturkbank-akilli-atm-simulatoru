@@ -1,0 +1,6 @@
+{
+  "name": "ÖztürkBank Akıllı ATM Simülatörü",
+  "description": "Gerçek bankacılık altyapısı içermeyen, React ve TypeScript ile geliştirilmiş etkileşimli ATM eğitim simülatörü.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
