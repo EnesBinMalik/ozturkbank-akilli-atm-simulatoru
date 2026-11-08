@@ -1,64 +1,42 @@
 # ÖztürkBank Akıllı ATM Simülatörü
 
-ÖztürkBank Akıllı ATM Simülatörü; ATM ekranı, kart/PIN akışı ve temel bankacılık senaryolarını etkileşimli bir arayüzde gösteren React ve TypeScript tabanlı bir eğitim demosudur.
+![ÖztürkBank Akıllı ATM Simülatörü — rozet](docs/rozet.svg)
 
-> **Önemli:** Bu proje gerçek bir banka veya ödeme hizmeti değildir. Banka, müşteri, kart, hesap ve işlem bilgileri yalnızca örnek amaçlıdır. Uygulama gerçek kart/PIN doğrulaması, bankacılık işlemi, biyometrik kontrol, EMV sertifikasyonu, sunucu bağlantısı veya güvenlik/fraud koruması sağlamaz. Gerçek kişisel ya da finansal bilgileri girmeyin.
+> **Etkileşimli oyun · durum yönetimi** — tasarım ve geliştirme: **Enes Öztürk**
 
-## Özellikler
+---
 
-- Kart seçimi, PIN girişi ve örnek hatalı giriş/bloke senaryoları
-- Bakiye görüntüleme, para çekme ve yatırma akışlarının simülasyonu
-- Fatura ödeme ve hesaplar arası transfer senaryoları
-- Dekont ve gün sonu (EOD) raporu önizleme/indirme
-- Örnek işlem ve güvenlik kayıtlarını inceleme
-- ATM tuş takımı, ses efektleri ve nakit haznesi gösterimi
+Gerçek bankacılık altyapısı içermeyen, React ve TypeScript ile geliştirilmiş etkileşimli ATM eğitim simülatörü.
 
-## Teknolojiler
+## Öne çıkanlar
 
-- React 19 ve TypeScript
-- Vite
-- Tailwind CSS
-- Lucide React
-
-## Gereksinimler
-
-- Node.js 20.19+ veya 22.12+
-- npm
+- Oyun döngüsü, durum ve skor yönetimi
+- Kullanıcı etkileşimi ve hamle doğrulama
+- Kazanma/kaybetme koşulları
+- Arayüzde animasyon ve geri bildirim
 
 ## Kurulum ve çalıştırma
 
 ```bash
 npm install
-npm run dev
+npm run dev        # http://localhost:3000
 ```
 
-Geliştirme sunucusu varsayılan olarak `http://localhost:3000` adresinde açılır.
-
-## Denetim ve derleme
-
-```bash
-npm run lint
-npm run build
-npm run preview
-```
-
-`npm run lint`, TypeScript denetimini; `npm run build`, üretim derlemesini çalıştırır. `npm run preview`, derleme çıktısını yerel olarak sunar.
-
-## Demo kullanımı
-
-Başlangıç ekranındaki kayıtlı örnek kartlardan birini seçin. Demo PIN'i kart seçiminin yanında gösterilir. İşlemler yalnızca tarayıcı belleğinde simüle edilir; sayfa yenilendiğinde örnek başlangıç durumuna dönülür. Dekont ve EOD dışa aktarma, dosyaları kullanıcının tarayıcısı üzerinden yerel olarak kaydeder.
+| Komut | Not |
+| --- | --- |
+| `npm install` | bağımlılıklar |
+| `npm run dev` | geliştirme sunucusu |
+| `npm run build` | üretim derlemesi |
 
 ## Proje yapısı
 
-```text
-src/
-  components/   ATM ekranı, kart/tuş takımı ve rapor bileşenleri
-  data/         Örnek kullanıcı, işlem ve kasa verileri
-  types/        TypeScript veri türleri
-  utils/        Ses ve dosya işlemleri
-  App.tsx       Uygulama akışı ve ATM simülasyonu
+```
+├── index.html
+├── package.json
+├── docs/rozet.svg        # imza rozeti
+└── src/                  # uygulama kaynakları
 ```
 
-## Lisans ve kullanım
+## Lisans
 
-Depo herkese açık olsa da bu durum içeriğin serbestçe yeniden kullanılabileceği anlamına gelmez. Projede ayrıca bir açık kaynak lisansı bulunmuyor; tüm haklar saklıdır.
+Bu proje **Enes Öztürk** tarafından geliştirilmiştir; tüm hakları saklıdır.
